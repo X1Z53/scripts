@@ -4,7 +4,7 @@ set -xe
 
 # Default things
 sudo dnf update -y
-sudo dnf remove -y gnome-abrt gnome-boxes gnome-characters gnome-connections gnome-contacts gnome-font-viewer gnome-logs gnome-maps gnome-system-monitor gnome-text-editor gnome-tour gnome-weather cheese rhythmbox simple-scan totem mediawriter libreoffice-calc libreoffice-writer libreoffice-impress yelp firefox
+sudo dnf remove -y gnome-abrt gnome-boxes gnome-characters gnome-connections gnome-contacts gnome-font-viewer gnome-logs gnome-maps gnome-system-monitor gnome-text-editor gnome-tour gnome-weather cheese rhythmbox simple-scan totem mediawriter libreoffice-calc libreoffice-writer libreoffice-impress yelp firefox nano
 sudo dnf install -y vim git
 hostnamectl set-hostname X1Z53
 rm -rf ~/Music/ ~/Public/ ~/Desktop/ ~/Templates/
