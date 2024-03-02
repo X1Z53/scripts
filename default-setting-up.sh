@@ -30,6 +30,7 @@ gsettings set org.gnome.desktop.interface font-name 'FiraCode Nerd Font Regular 
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 gsettings set org.gnome.desktop.interface monospace-font-name 'FiraCode Nerd Font Regular 10'
 gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
+gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 1
 gsettings set org.gnome.desktop.wm.preferences titlebar-font 'FiraCode Nerd Font Regular 10'
 gsettings set org.gnome.mutter center-new-windows true
