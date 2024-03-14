@@ -2,7 +2,7 @@
 
 set -xe
 
-sudo dnf install java
+sudo dnf install -y java
 curl -s https://get.sdkman.io | bash
-zsh
-sdk install kotlin
+echo "Do it yourself: "
+echo "sdk install kotlin"
