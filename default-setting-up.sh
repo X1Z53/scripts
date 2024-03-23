@@ -53,6 +53,7 @@ git config --global credential.helper store
 # PortProton
 sudo dnf copr enable boria138/portproton
 sudo dnf install -y portproton
+echo "PortProton" > ~/.hidden
 
 # Yandex Browser
 sudo rpmkeys --import https://repo.yandex.ru/yandex-browser/YANDEX-BROWSER-KEY.GPG
