@@ -8,7 +8,7 @@ sudo dnf update -y
 sudo dnf install -y vim git
 hostnamectl set-hostname X1Z53
 rm -rf ~/Music/ ~/Public/ ~/Desktop/ ~/Templates/
-rm -rf ~/Музыка/ ~/Общие/ ~/Рабочий\ стол/ ~/Шаблоны/
+rm -rf ~/Музыка/ ~/Общедоступные/ ~/Рабочий\ стол/ ~/Шаблоны/
 
 # Repositories
 sudo rm -r /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:phracek:PyCharm.repo /etc/yum.repos.d/google-chrome.repo /etc/yum.repos.d/rpmfusion-nonfree-nvidia-driver.repo /etc/yum.repos.d/rpmfusion-nonfree-steam.repo /etc/yum.repos.d/fedora-cisco-openh264.repo
