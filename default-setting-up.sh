@@ -4,6 +4,7 @@ set -xe
 
 # Usual stuff
 sudo dnf remove -y gnome-abrt gnome-boxes gnome-characters gnome-connections gnome-contacts gnome-font-viewer gnome-logs gnome-maps gnome-system-monitor gnome-text-editor gnome-tour cheese rhythmbox simple-scan totem mediawriter libreoffice-calc libreoffice-writer libreoffice-impress yelp firefox nano
+sudo dnf update -y
 sudo dnf install -y vim git
 hostnamectl set-hostname X1Z53
 rm -rf ~/Music/ ~/Public/ ~/Desktop/ ~/Templates/
@@ -54,19 +55,10 @@ sudo rpmkeys --import https://repo.yandex.ru/yandex-browser/YANDEX-BROWSER-KEY.G
 sudo dnf config-manager --add-repo http://repo.yandex.ru/yandex-browser/rpm/beta/x86_64
 sudo dnf install -y yandex-browser-beta
 sudo /opt/yandex/browser-beta/update_codecs /opt/yandex/browser-beta
-rm ~/yandex-browser-beta.desktop
 
 # AstroNvim
 sudo dnf install -y neovim gcc
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
-
-# QTerminal
-sed -i "s/HideTabBarWithOneTab=false/ideTabBarWithOneTab=true/g"         ~/.config/qterminal.org/qterminal.ini
-sed -i "s/HistoryLimited=true/istoryLimited=false/g"                     ~/.config/qterminal.org/qterminal.ini
-sed -i "s/MenuVisible=true/enuVisible=false/g"                           ~/.config/qterminal.org/qterminal.ini
-sed -i "s/ScrollbarPosition=2/crollbarPosition=0/g"                      ~/.config/qterminal.org/qterminal.ini
-sed -i "s/highlightCurrentTerminal=true/ighlightCurrentTerminal=false/g" ~/.config/qterminal.org/qterminal.ini
-sed -i "s/fontFamily=Monospace/fontFamily=FiraCode Nerd Font/g"          ~/.config/qterminal.org/qterminal.ini
 
 # Install ZSH
 sudo dnf install -y zsh
