@@ -50,6 +50,10 @@ git config --global user.name "x1z53"
 git config --global user.email "x1z53@yandex.ru"
 git config --global credential.helper store
 
+# PortProton
+sudo dnf copr enable boria138/portproton
+sudo dnf install -y portproton
+
 # Yandex Browser
 sudo rpmkeys --import https://repo.yandex.ru/yandex-browser/YANDEX-BROWSER-KEY.GPG
 sudo dnf config-manager --add-repo http://repo.yandex.ru/yandex-browser/rpm/beta/x86_64
